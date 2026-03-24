@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>General Store</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+<header>git
+
+  <div class="logo">
+    <div class="logo-box"> <img src="Images/logo image.jpg" alt="SG"> </div>
+    <div class="logo-text">SAI<br><span>General Store</span></div>
+  </div>
+
+    <nav> <!-- navingation links and heading tab-->
+        <a href="#home-section">Home</a>
+        <a href="#about-section">About</a>
+        <a href="#categories">Products</a>
+        <a href="#feedback-section">Testimonials</a>
+        <a href="#footer">Contact</a>
+    </nav>
+
+  <button class="visit-btn" onclick="scrollToSection('footer')"> Visit Us </button> <!-- later this will be the cart button here -->
+</header>
+
+<section id="home-section" class="hero"> <!-- main section that shows at the home page-->
+
+  <div class="hero-content">
+    <h1>Your Trusted Neighborhood <br><span>General Store</span></h1>
+    <p>Serving our community with daily essentials since 2020 and emerging as the best general store in town!</p>
+    <button class="hero-btn" onclick="scrollToSection('footer')"> Visit Us Today </button>
+  </div>
+
+</section>
+
+<section id="about-section" class="about"> <!-- about section that gives little intro and key points -->
+
+<div class="about-content">  <!-- left side content -->
+  <h2>About Our Store</h2>
+  <p>Welcome to Sai General Store, your one-stop shop for all your daily needs. We are committed to providing quality products at competitive prices, with a focus on excellent customer service.
+    <br>We believe in keeping things local, honest, and affordable. Every product on our shelves is chosen with care—because you deserve quality without compromise.
+  </p>
+</div>
+
+<br>
+
+<div class="about-key-points"> <!-- three key points-->
+
+    <div class="key-point"> <!-- First key point -->
+
+    <div class="icon">🌿</div>
+    <h4>Quality products at competitive prices</h4>
+    <p>We ensure that every product meets our high standards of quality while offering competitive pricing.</p>
+    </div>
+
+    <div class="key-point"> <!--Second key point -->
+    <div class="icon">👥</div>
+    <h4>Excellent customer service</h4>
+    <p>We are dedicated to providing exceptional customer service and ensuring a positive shopping experience for all our customers.</p>
+    </div>
+
+    <div class="key-point"> <!--Third key point -->
+    <div class="icon">🏠</div>
+    <h4>Commitment to local, honest, and affordable business practices</h4>
+    <p>We are committed to maintaining the trust of our community through transparent and fair business practices.</p>
+    </div>
+</div>
+
+<div class="about-pic">  <!-- Right Side Content -->
+    <img src="images/store.jpg" alt="Sai General Store">
+</div>
+
+</section>
+
+<section id="categories">
+  <h2>What You'll Find Here</h2>
+
+  <div class="category-container">
+
+    <div class="category-card" onclick="showProducts('Household')">
+      <img src="images/household.jpg">
+      <h3>All Household Items</h3>
+      <p>STarting just from ₹10</p>
+    </div>
+
+    <div class="category-card" onclick="showProducts('Cold Drinks and Snacks')">
+      <img src="images/pantry.jpg">
+      <h3>All Snacks and Cold Drinks</h3>
+      <p>From ₹10</p>
+    </div>
+
+    <div class="category-card" onclick="showProducts('Milk and Dairy')">
+      <img src="images/household.jpg">
+      <h3>Milk and Dairy</h3>
+      <p>From ₹20</p>
+    </div>
+
+    <div class="category-card" onclick="showProducts('Stationery')">
+      <img src="images/household.jpg">
+      <h3>Stationery</h3>
+      <p>From ₹5</p>
+    </div>
+
+    <div class="category-card" onclick="showProducts('Toys and Gifts')">
+      <img src="images/household.jpg">
+      <h3>Toys and Gifts</h3>
+      <p>From ₹50</p>
+    </div>
+
+    <div class="category-card" onclick="showProducts('Pooja and fasting')">
+      <img src="images/household.jpg">
+      <h3>Pooja and fasting</h3>
+      <p>From ₹50</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="feedback-section" class="feedback-section">
+  <div class="feedback-content">
+
+  </div>
+</section>
+
+<footer id="footer" class="footer">
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-col">
+      <div class="footer-logo">
+        <div class="logo-box"> <img src="Images/logo image.jpg" alt="SG"> </div>
+        <div>
+          <h3>SAI</h3>
+          <p>General Store</p>
+        </div>
+      </div>
+
+      <p class="footer-desc">
+        Your trusted neighborhood store since 2020.
+        Serving the community with quality, care, and a smile.
+      </p>
+    </div>
+
+    <!-- CENTER -->
+    <div class="footer-col">
+      <h4>QUICK LINKS</h4>
+      <ul>
+        <li><a href="#home-section">Home</a></li>
+        <li><a href="#about-section">About</a></li>
+        <li><a href="#categories">Products</a></li>
+        <li><a href="#feedback-section">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>  
+      </ul>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-col">
+      <h4>CONNECT WITH US</h4>
+      <button class="visit-btn">Visit Us</button>
+
+      <p class="address">
+        Sai General Store, Nangal Mala village, Mahendergarh, Haryana (123024)
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({
+    behavior: "smooth"
+  });
+}
+</script>
+
+</body>
+</html>
