@@ -91,7 +91,7 @@ nav a:hover {
 /* HERO SECTION */
 .hero {
   height: 100vh;
-  background: url('Images/logo image.jpg') center/cover no-repeat;
+  background: url('Images/herosectionimg.avif') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -407,5 +407,93 @@ form button:hover {
 
   .footer {
     padding: 40px 20px;
+  }
+}
+
+/* ================= ABOUT SECTION ================= */
+
+/* Main wrapper */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* LEFT SIDE CONTAINER */
+.about-container {
+  flex: 1;
+}
+
+/* TEXT CONTENT */
+.about-content h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #2f5d46;
+}
+
+.about-content p {
+  color: #555;
+  line-height: 1.7;
+}
+
+/* KEY POINTS (CARDS) */
+.about-key-points {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+/* INDIVIDUAL CARD */
+.key-point {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.key-point:hover {
+  transform: translateY(-5px);
+}
+
+/* ICON */
+.key-point .icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.key-point h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #2f5d46;
+}
+
+.key-point p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* RIGHT SIDE IMAGE */
+.about-pic {
+  flex: 1;
+}
+
+.about-pic img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .about-key-points {
+    flex-direction: column;
   }
 }
