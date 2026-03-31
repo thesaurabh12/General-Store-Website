@@ -18,11 +18,15 @@
         <a href="#home-section">Home</a>
         <a href="#about-section">About</a>
         <a href="#categories">Products</a>
-        <a href="#feedback-section">Testimonials</a>
+        <a href="#testimonials">Testimonials</a>
         <a href="#footer">Contact</a>
     </nav>
 
-  <button class="visit-btn" onclick="scrollToSection('footer')"> Visit Us </button> <!-- later this will be the cart button here -->
+  <div class="nav-actions"> <!-- search and cart buttons -->
+  <button class="search-btn">SEARCH 🔍 </button>
+  <button class="cart-btn">CART 🛒</button> 
+  </div>
+
 </header>
 
 <section id="home-section" class="hero"> <!-- main section that shows at the home page-->
@@ -32,10 +36,10 @@
     <p>Serving our community with daily essentials since 2020 and emerging as the best general store in town!</p>
     <button class="hero-btn" onclick="scrollToSection('footer')"> Visit Us Today </button>
   </div>
-
 </section>
 
-<div id="about-section" class="about"> <!-- about section that gives little intro and key points -->
+<section id="about-section">  <!-- about section that gives little intro and key points --> 
+<div class="about">
 
 <div class ="about-container"> <!--This is the wrapper container for the all about section -->
 
@@ -84,46 +88,65 @@
     <div class="category-card" onclick="showProducts('Household')">
       <img src="images/household.jpg">
       <h3>All Household Items</h3>
-      <p>STarting just from ₹10</p>
+      <p>Starting just from ₹10</p>
     </div>
 
     <div class="category-card" onclick="showProducts('Cold Drinks and Snacks')">
       <img src="images/pantry.jpg">
       <h3>All Snacks and Cold Drinks</h3>
-      <p>From ₹10</p>
+      <p>Starting just from ₹10</p>
     </div>
 
     <div class="category-card" onclick="showProducts('Milk and Dairy')">
       <img src="images/household.jpg">
       <h3>Milk and Dairy</h3>
-      <p>From ₹20</p>
+      <p>Starting just from ₹20</p>
     </div>
 
     <div class="category-card" onclick="showProducts('Stationery')">
       <img src="images/household.jpg">
       <h3>Stationery</h3>
-      <p>From ₹5</p>
+      <p>Starting just from ₹5</p>
     </div>
 
     <div class="category-card" onclick="showProducts('Toys and Gifts')">
       <img src="images/household.jpg">
       <h3>Toys and Gifts</h3>
-      <p>From ₹50</p>
+      <p>Starting just from ₹50</p>
     </div>
 
     <div class="category-card" onclick="showProducts('Pooja and fasting')">
       <img src="images/household.jpg">
       <h3>Pooja and fasting</h3>
-      <p>From ₹50</p>
+      <p>Starting just from ₹50</p>
     </div>
 
   </div>
 </section>
 
-<section id="feedback-section" class="feedback-section">
-  <div class="feedback-content">
+<section id="testimonials" class="testimonials">
+
+  <h2>Our Happy Customers Say</h2>
+  <p class="subtitle">Real stories from the people who make our store special.</p>
+
+  <div class="testimonial-card">
+
+    <div class="stars">★★★★★</div>
+
+    <p class="review">
+      "Sai General Store has been my go-to for years. The staff is friendly and products are always fresh. Feels like family!"
+    </p>
+
+    <div class="user">
+      <img src="Images/sonu.jpg" alt="customer">
+      <div>
+        <h4>Sonu</h4>
+        <span>Local Customer</span>
+      </div>
+    </div>
 
   </div>
+
 </section>
 
 <footer id="footer" class="footer">
@@ -152,7 +175,7 @@
         <li><a href="#home-section">Home</a></li>
         <li><a href="#about-section">About</a></li>
         <li><a href="#categories">Products</a></li>
-        <li><a href="#feedback-section">Testimonials</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="contact.html">Contact</a></li>  
       </ul>
     </div>
